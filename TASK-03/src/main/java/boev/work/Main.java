@@ -14,7 +14,6 @@ import java.util.Random;
 
 public class Main {
     static {
-        // Регистрируем BouncyCastle
         Security.addProvider(new BouncyCastleProvider());
     }
 
