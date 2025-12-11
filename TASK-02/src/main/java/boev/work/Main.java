@@ -10,7 +10,6 @@ import java.io.*;
 
 import java.security.SecureRandom;
 import java.security.Security;
-import java.util.Arrays;
 
 
 
@@ -81,8 +80,6 @@ public class Main {
         IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
         Cipher cipher = Cipher.getInstance(ALGORITHM, "BC");
         cipher.init(Cipher.DECRYPT_MODE, key, ivSpec);
-
-
 
         byte[] buffer = new byte[4096];
         int r;
