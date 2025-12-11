@@ -52,7 +52,6 @@ public class Main {
         Cipher cipher = Cipher.getInstance(ALGO, "BC");
 
         byte[] hash = new byte[BLOCK_SIZE];
-        new SecureRandom().nextBytes(hash);
 
         int r;
         long bytes = 0;
