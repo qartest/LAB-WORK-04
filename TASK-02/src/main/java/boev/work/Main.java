@@ -88,7 +88,7 @@ public class Main {
         int r;
         while ((r = in.read(buffer)) != -1) {
             byte[] outBuffer = cipher.update(buffer, 0, r);
-            if (out != null) out.write(outBuffer);
+            if (outBuffer != null) out.write(outBuffer);
         }
         byte[] finalBytes = cipher.doFinal();
         if (finalBytes != null) out.write(finalBytes);
